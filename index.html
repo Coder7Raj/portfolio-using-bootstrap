@@ -98,6 +98,13 @@
       .about-section {
         padding: 50px 0;
       }
+      .heading {
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        margin-top: 25px;
+        text-align: center;
+      }
       .about-img {
         width: 100%;
         max-width: 300px;
@@ -113,6 +120,32 @@
       .social-icons a:hover {
         color: white;
       }
+      .skills-section {
+        padding: 50px 0;
+      }
+      .skills-list {
+        list-style: none;
+        padding: 0;
+      }
+      .skills-list li {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        margin-bottom: 10px;
+        background: #1e1e1e;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px rgba(0, 255, 255, 0.3);
+        transition: 0.3s;
+      }
+      .skills-list li:hover {
+        box-shadow: 0px 0px 10px cyan;
+      }
+      .skills-list i {
+        color: cyan;
+        font-size: 24px;
+        margin-right: 10px;
+      }
       /* Responsive part starts here */
       /* for mobile device */
       @media (max-width: 425px) {
@@ -126,6 +159,21 @@
         .hero-text {
           margin-top: 20px;
         }
+        .about-text-div {
+          margin-top: 20px;
+        }
+        .about-sec-div {
+          flex-direction: column-reverse;
+        }
+        .img-mar {
+          margin-top: 20px;
+        }
+        .heading {
+          margin-bottom: 10px;
+        }
+        .tech-mt {
+          margin-top: 15px;
+        }
       }
       /* for tablet or medium device */
       @media (max-width: 768px) {
@@ -138,6 +186,9 @@
         .download-btns {
           display: flex;
           gap: 5px;
+        }
+        .heading {
+          margin-bottom: 25px;
         }
       }
     </style>
@@ -187,11 +238,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Possimus
               nulla sed saepe rerum, animi expedita.
             </p>
-            <div class="social-icons my-3">
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
+
             <div class="download-btns">
               <a href="#" class="btn btn-custom"
                 >Download CV
@@ -217,6 +264,77 @@
         </div>
       </div>
     </section>
+    <!-- About Me Section -->
+    <div class="container text-center about-section">
+      <h1 class="heading">About <span style="color: cyan">Me</span></h1>
+      <div class="row align-items-center about-sec-div">
+        <div class="col-md-4 img-mar">
+          <img
+            src="https://i.postimg.cc/6qt7QPt6/portfolio.png"
+            alt="Your Name"
+            class="about-img"
+          />
+        </div>
+        <div class="col-md-8 text-md-start about-text-div">
+          <h2>Hello, I'm <span style="color: cyan">Raj</span></h2>
+          <h4>Frontend Developer | Web Designer</h4>
+          <p>
+            I am passionate about building responsive and user-friendly
+            websites. With experience in HTML, CSS, JavaScript, and Bootstrap, I
+            create modern and functional web solutions.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+
+    <div class="container skills-section">
+      <h2 class="text-center mb-4">
+        My <span style="color: cyan">Skills</span>
+      </h2>
+      <div class="row">
+        <!-- Frontend Skills -->
+        <div class="col-md-4 tech-mt">
+          <h4><i class="fa-solid fa-code"></i> Frontend</h4>
+          <ul class="skills-list">
+            <li><i class="fa-brands fa-html5"></i> HTML</li>
+            <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+            <li><i class="fa-brands fa-js"></i> JavaScript</li>
+            <li><i class="fa-brands fa-react"></i> React</li>
+            <li><i class="fa-brands fa-bootstrap"></i> Bootstrap</li>
+            <li><i class="fa-solid fa-wind"></i> Tailwind CSS</li>
+          </ul>
+        </div>
+        <!-- Backend Skills -->
+        <div class="col-md-4 tech-mt">
+          <h4><i class="fa-solid fa-server"></i> Backend</h4>
+          <ul class="skills-list">
+            <li><i class="fa-brands fa-node"></i> Node.js</li>
+            <li><i class="fa-solid fa-network-wired"></i> Express.js</li>
+            <li><i class="fa-solid fa-database"></i> MongoDB</li>
+            <li><i class="fa-solid fa-database"></i> MySQL</li>
+          </ul>
+        </div>
+        <!-- Tools & Technologies -->
+        <div class="col-md-4 tech-mt">
+          <h4><i class="fa-solid fa-tools"></i> Tools</h4>
+          <ul class="skills-list">
+            <li><i class="fa-brands fa-git-alt"></i> Git</li>
+            <li><i class="fa-brands fa-github"></i> GitHub</li>
+            <li><i class="fa-solid fa-code"></i> VS Code</li>
+            <li><i class="fa-solid fa-paper-plane"></i> Postman</li>
+            <li><i class="fa-solid fa-cloud"></i> Firebase</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap CDN Link: JS -->
     <script
