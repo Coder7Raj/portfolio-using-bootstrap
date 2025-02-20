@@ -146,6 +146,54 @@
         font-size: 24px;
         margin-right: 10px;
       }
+      /* Custom Styling for Education Section */
+      .card {
+        border-radius: 15px;
+      }
+
+      .card-body {
+        background-color: white;
+        border-radius: 15px;
+      }
+
+      .card-title {
+        /* color: #00695c; */
+        font-weight: bold;
+        font-size: 1.25rem;
+      }
+
+      .card-text {
+        /* color: #00796b; */
+        font-size: 1rem;
+      }
+
+      .education-icon {
+        /* color: #00796b; */
+        font-size: 2rem;
+      }
+
+      .education-section {
+        /* background-color: #00695c; */
+        color: white;
+        padding: 60px 0;
+        border-radius: 10px;
+      }
+
+      .education-heading {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 40px;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        transition: 0.3s ease-in-out;
+      }
+
+      .card-footer {
+        /* background-color: #00796b; */
+        color: white;
+      }
       /* Responsive part starts here */
       /* for mobile device */
       @media (max-width: 425px) {
@@ -349,6 +397,7 @@
             <img
               src="https://i.postimg.cc/MTQRQfns/image.jpg"
               class="card-img-top"
+              style="border-radius: 18px"
               alt="Project Image"
             />
             <div class="card-body">
@@ -383,6 +432,7 @@
             <img
               src="https://i.postimg.cc/MTQRQfns/image.jpg"
               class="card-img-top"
+              style="border-radius: 18px"
               alt="Project Image"
             />
             <div class="card-body">
@@ -417,6 +467,7 @@
             <img
               src="https://i.postimg.cc/MTQRQfns/image.jpg"
               class="card-img-top"
+              style="border-radius: 18px"
               alt="Project Image"
             />
             <div class="card-body">
@@ -441,6 +492,68 @@
               >
                 <i class="fab fa-github"></i> GitHub Repo
               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education Section -->
+
+    <div class="container education-section">
+      <h2 class="text-center education-heading">
+        My <span style="color: cyan">Education</span>
+      </h2>
+
+      <div class="row">
+        <!-- Degree 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-graduation-cap education-icon"></i> Bachelor's
+                Degree in Computer Science
+              </h5>
+              <p class="card-text">
+                <strong>Institution:</strong> Example University <br />
+                <strong>Duration:</strong> 2015 - 2019 <br />
+                <strong>Location:</strong> City, Country
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Degree 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-graduation-cap education-icon"></i> Master's
+                Degree in Software Engineering
+              </h5>
+              <p class="card-text">
+                <strong>Institution:</strong> Example Institute of Technology
+                <br />
+                <strong>Duration:</strong> 2020 - 2022 <br />
+                <strong>Location:</strong> City, Country
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Degree 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-graduation-cap education-icon"></i> Diploma in
+                Web Development
+              </h5>
+              <p class="card-text">
+                <strong>Institution:</strong> Tech Academy <br />
+                <strong>Duration:</strong> 2021 - 2022 <br />
+                <strong>Location:</strong> City, Country
+              </p>
             </div>
           </div>
         </div>
