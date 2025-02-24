@@ -32,6 +32,9 @@
         background-color: #0b0f19;
         color: white;
       }
+      #get-name {
+        font-size: 40px;
+      }
       .hero-section {
         display: flex;
         align-items: center;
@@ -44,6 +47,7 @@
         position: fixed;
         left: 0;
         right: 0;
+        top: 7px;
         background: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
@@ -255,16 +259,26 @@
         margin-top: 30px;
         border-radius: 10px;
       }
+      .visib {
+        display: none;
+      }
+      .nav-link-items {
+        margin-right: 0;
+      }
+      #toggle-btn {
+        display: none;
+      }
       /* Responsive part starts here */
       /* for mobile device */
+
       @media (max-width: 425px) {
         .profile-img img {
           margin-top: 40px;
           width: 95%;
         }
-        /* .hero-section {
-          padding: 1px;
-        } */
+        #get-name {
+          font-size: 30px;
+        }
         .hero-text {
           margin-top: 20px;
         }
@@ -287,11 +301,18 @@
         .head-ban {
           padding-top: 55px;
         }
+        #toggle-btn {
+          display: block;
+          color: white;
+        }
       }
       /* for tablet or medium device */
       @media (max-width: 768px) {
         .profile-img img {
           width: 90%;
+        }
+        #get-name {
+          font-size: 40px;
         }
         .hero-section {
           padding: 1px;
@@ -309,20 +330,26 @@
         .a-btn {
           margin-bottom: 5px;
         }
+        #toggle-btn {
+          display: block;
+          color: white;
+        }
       }
     </style>
   </head>
   <body>
     <!-- Navbar -->
     <header>
+      <!-- Navbar -->
       <nav
         id="nav"
         class="navbar navbar-expand-lg navbar-dark bg-transparent nav-style"
       >
         <div class="container">
-          <a class="navbar-brand fw-bold" href="#">Raj._</a>
+          <a id="get-name" class="navbar-brand fw-bold" href="#">Raj_</a>
           <button
             class="navbar-toggler"
+            id="toggle-btn"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -338,9 +365,6 @@
                 <a class="nav-link active" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#education">Education</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
@@ -350,7 +374,10 @@
                 <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">ContactMe</a>
               </li>
             </ul>
           </div>
