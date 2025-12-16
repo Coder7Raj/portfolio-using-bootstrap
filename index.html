@@ -270,7 +270,17 @@
       }
       /* Responsive part starts here */
       /* for mobile device */
+.skills-list li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
 
+.skills-list i {
+    margin-right: 10px;
+    color: cyan; /* Matches your "Skills" span color */
+    width: 25px; /* Keeps icons aligned vertically */
+}
       @media (max-width: 425px) {
         .profile-img img {
           margin-top: 40px;
@@ -441,11 +451,9 @@
         </div>
         <div class="col-md-8 text-md-start about-text-div">
           <h2>Hello, I'm <span style="color: cyan">Raj</span></h2>
-          <h4>Frontend Developer | Web Designer</h4>
+          <h4>Frontend Developer | Aspiring Software Engineering</h4>
           <p>
-            Hi, I'm Raj. I'm pursuing a Diploma in Computer Science and passionate about software development. I enjoy building web applications, solving coding challenges, and continuously improving my skills to become a software engineer.
-
-Currently, I'm focused on advancing my JavaScript expertise, practicing problem solving, and strengthening my software engineering fundamentals.
+            Hi, I'm Raj. I'm pursuing a Diploma in Computer Science and passionate about software development. I enjoy building web applications, solving coding challenges, and continuously improving my skills to become a software engineer.Currently, I'm focused on advancing my JavaScript expertise, practicing problem solving, and strengthening my software engineering fundamentals.
           </p>
           <div class="social-icons">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -458,47 +466,64 @@ Currently, I'm focused on advancing my JavaScript expertise, practicing problem 
     </div>
 
     <!-- Skills Section -->
-
-    <div id="skills" class="container skills-section">
-      <h2 class="text-center mb-4">
-        My <span style="color: cyan">Skills</span>
-      </h2>
-      <div class="row">
-        <!-- Frontend Skills -->
-        <div class="col-md-4 tech-mt">
-          <h4><i class="fa-solid fa-code"></i> Frontend</h4>
-          <ul class="skills-list">
-            <li><i class="fa-brands fa-html5"></i> HTML</li>
-            <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
-            <li><i class="fa-brands fa-js"></i> JavaScript</li>
-            <li><i class="fa-brands fa-react"></i> React</li>
-            <li><i class="fa-brands fa-bootstrap"></i> Bootstrap</li>
-            <li><i class="fa-solid fa-wind"></i> Tailwind CSS</li>
-          </ul>
-        </div>
-        <!-- Backend Skills -->
-        <div class="col-md-4 tech-mt">
-          <h4><i class="fa-solid fa-server"></i> Backend</h4>
-          <ul class="skills-list">
-            <li><i class="fa-brands fa-node"></i> Node.js</li>
-            <li><i class="fa-solid fa-network-wired"></i> Express.js</li>
-            <li><i class="fa-solid fa-database"></i> MongoDB</li>
-            <li><i class="fa-solid fa-database"></i> MySQL</li>
-          </ul>
-        </div>
-        <!-- Tools & Technologies -->
-        <div class="col-md-4 tech-mt">
-          <h4><i class="fa-solid fa-tools"></i> Tools</h4>
-          <ul class="skills-list">
-            <li><i class="fa-brands fa-git-alt"></i> Git</li>
-            <li><i class="fa-brands fa-github"></i> GitHub</li>
-            <li><i class="fa-solid fa-code"></i> VS Code</li>
-            <li><i class="fa-solid fa-paper-plane"></i> Postman</li>
-            <li><i class="fa-solid fa-cloud"></i> Firebase</li>
-          </ul>
-        </div>
+<div id="skills" class="container skills-section">
+  <h2 class="text-center mb-5">
+    My <span style="color: cyan">Skills</span>
+  </h2>
+  
+  <div class="row g-4"> 
+    
+    <div class="col-md-6 col-lg-3 tech-mt">
+      <div class="p-3 h-100">
+        <h4><i class="fa-solid fa-code text-info"></i> Frontend</h4>
+        <ul class="list-unstyled skills-list">
+          <li><i class="fa-brands fa-html5"></i> HTML</li>
+          <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+          <li><i class="fa-brands fa-js"></i> JavaScript</li>
+          <li><i class="fa-brands fa-react"></i> React</li>
+          <li><i class="fa-brands fa-bootstrap"></i> Bootstrap</li>
+          <li><i class="fa-solid fa-wind"></i> Tailwind CSS</li>
+        </ul>
       </div>
     </div>
+
+    <div class="col-md-6 col-lg-3 tech-mt">
+      <div class="p-3 h-100">
+        <h4><i class="fa-solid fa-server text-info"></i> Backend</h4>
+        <ul class="list-unstyled skills-list">
+          <li><i class="fa-brands fa-node"></i> Node.js</li>
+          <li><i class="fa-solid fa-network-wired"></i> Express.js</li>
+          <li><i class="fa-solid fa-database"></i> MongoDB</li>
+          <li><i class="fa-solid fa-database"></i> MySQL</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3 tech-mt">
+      <div class="p-3 h-100">
+        <h4><i class="fa-solid fa-terminal text-info"></i> Languages</h4>
+        <ul class="list-unstyled skills-list">
+          <li><i class="fas fa-file-code"></i> C</li>
+          <li><i class="fas fa-code"></i> C++</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3 tech-mt">
+      <div class="p-3 h-100">
+        <h4><i class="fa-solid fa-screwdriver-wrench text-info"></i> Tools</h4>
+        <ul class="list-unstyled skills-list">
+          <li><i class="fa-brands fa-git-alt"></i> Git</li>
+          <li><i class="fa-brands fa-github"></i> GitHub</li>
+          <li><i class="fa-solid fa-code"></i> VS Code</li>
+          <li><i class="fa-solid fa-paper-plane"></i> Postman</li>
+          <li><i class="fa-solid fa-cloud"></i> Firebase</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
 
     <!-- Project Section -->
     <div id="projects" class="container my-5">
